@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FaqsComponent implements OnInit {
 
+  flip = false;
+
   constructor() { }
 
   ngOnInit() {
@@ -18,5 +20,23 @@ export class FaqsComponent implements OnInit {
   }
   clickEvent1(){
     alert("You double clicked me, prepare to fight");
+  }
+
+  switch (v) {
+    //this.flip=!this.flip;
+    //this.flip=this.flip ? !this.flip : !this.flip;
+    //v.innerText = this.flip  ? "Off" : "On";
+    if(this.flip)
+    {
+      this.flip=false;
+      v.innerText="On"
+    } else
+    {
+      
+      v.innerText="Off"
+    this.flip=true;
+
+    
+    }
   }
 }

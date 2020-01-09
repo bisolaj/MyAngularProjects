@@ -2,3 +2,9 @@
 <button #btn (click)="clickEvent()" type="button" class="btn btn-dark">Dark</button>
 <button (dblclick)="clickEvent1()" type="button" class="btn btn-primary">Primary</button>
 <p>Value in button is {{btn.innerText}}</p>
+
+<button #chicken (click)="switch(chicken)" type="button" class="btn btn-dark">Off</button>
+
+<div *ngIf = "flip">
+    <p>I am Visible</p>
+</div>
