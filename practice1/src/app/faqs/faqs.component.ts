@@ -12,4 +12,11 @@ export class FaqsComponent implements OnInit {
   ngOnInit() {
   }
 
+  clickEvent(){
+  
+    alert("You clicked me, prepare to die");
+  }
+  clickEvent1(){
+    alert("You double clicked me, prepare to fight");
+  }
 }
